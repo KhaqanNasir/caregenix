@@ -124,7 +124,7 @@ For questions or feedback, reach out via:
 
 GitHub Issues: caregenix/issues
 
-Email: your-email@example.com
+Email: khaqannnasir01@gmail.com
 
 ### 🙌 Acknowledgments
 Built during the 2025 Hackathon for innovative healthcare solutions.
@@ -132,15 +132,3 @@ Built during the 2025 Hackathon for innovative healthcare solutions.
 Thanks to Create React App for the robust React setup.
 
 Hosted with ❤️ by Netlify.
-
-text
-
-
-### Instructions
-1. **Replace Placeholders**: Update `your-username` with your actual GitHub username and `your-email@example.com` with your contact email.
-2. **Add Screenshots**: Replace the placeholder image URL (`https://via.placeholder.com/600x300.png?text=Caregenix+Landing+Page`) with an actual screenshot of your landing page. You can host it on a service like Imgur or in your repository's `/screenshots` folder.
-3. **Customize Hackathon Details**: If you have specific details about the hackathon (e.g., name, date, or theme), replace "2025 Hackathon" with those details.
-4. **Add Supporting Files**: Create a `CODE_OF_CONDUCT.md` and `LICENSE` file in your repository to match the links in the README.
-5. **Save the File**: Copy this code into a `README.md` file in your GitHub repository's root directory.
-
-This README is designed to be professional, visually appealing with badges and emojis, and informative, covering all necessary aspects of your Caregenix project. Let me know if you need help with specific customizations or additional sections!
