@@ -28,7 +28,7 @@ Caregenix aims to bridge the gap between patients and healthcare services by off
 
 ## 📸 Screenshots
 
-![Landing Page](https://via.placeholder.com/600x300.png?text=Caregenix+Landing+Page)
+![Landing Page](https://github.com/KhaqanNasir/caregenix/blob/master/homepage.png)
 *Caregenix Landing Page showcasing intuitive navigation and healthcare services.*
 
 ## 🏗️ Getting Started
@@ -97,7 +97,7 @@ Transform Caregenix into a Progressive Web App (PWA) for offline capabilities. S
 **Ejecting**
 If you need full control over the build configuration, you can eject the app:
 
-    ```bash
+     ```bash
     npm run eject
  **Note:** This is a one-way operation and removes the single build dependency. Use with caution.
 
