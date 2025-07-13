@@ -97,9 +97,10 @@ Transform Caregenix into a Progressive Web App (PWA) for offline capabilities. S
 **Ejecting**
 If you need full control over the build configuration, you can eject the app:
 
-     ```bash
+    ```bash
     npm run eject
- **Note:** This is a one-way operation and removes the single build dependency. Use with caution.
+    
+**Note:** This is a one-way operation and removes the single build dependency. Use with caution.
 
 ### 🤝 Contributing
 We welcome contributions to enhance Caregenix! To contribute:
