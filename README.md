@@ -76,9 +76,9 @@ To deploy the app on Netlify:
 
  3. Configure the build settings:
 
-    . Build command: npm run build
+    **Build command:** npm run build
 
-    . Publish directory: build
+    **Publish directory:** build
 
  4. Deploy the site and access it at a URL like https://caregenix.netlify.app/.
 
