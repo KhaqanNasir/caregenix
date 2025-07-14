@@ -118,85 +118,85 @@ const Home = () => {
     }
   ];
 
-  const technologies = [
-    { 
-      name: "React", 
-      category: "Frontend", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNjFkYWZiIiBkPSJNMTQgMTJhMiAyIDAgMSAwLTQgMGEyIDIgMCAwIDAgNCAweiBtMC0yLjY2MmE5Ljk3NyA5Ljk3NyAwIDAgMSAyLjg4Ni0uNjk4YzEuMDMyIDAgMS45My4yOCAyLjU5OS43OWMuNjgzLjUyIDEuMDE1IDEuMjEgMS4wMTUgMS45NXMtLjMzMiAxLjQzLTEuMDE1IDEuOTVjLS42NjkuNTEtMS41NjcuNzktMi41OTkuNzlhOS45NzcgOS45NzcgMCAwIDEtMi44ODYtLjY5OGE5Ljk3NyA5Ljk3NyAwIDAgMS0yLjg4Ni42OThjLTEuMDMyIDAtMS45My0uMjgtMi41OTktLjc5QzYuMzMyIDEzLjQzIDYgMTIuNzQgNiAxMnMuMzMyLTEuNDMgMS4wMTUtMS45NWMuNjY5LS41MSAxLjU2Ny0uNzkgMi41OTktLjc5YTkuOTc3IDkuOTc3IDAgMCAxIDIuODg2LjY5OEExMC4yNDIgMTAuMjQyIDAgMCAxIDEyIDEwLjUzOWE5LjAzMyA5LjAzMyAwIDAgMSAyIDEuMTIzem0tNi4yNzEgMGE3LjgxIDcuODEgMCAwIDAgNS4yNzEgMGE3LjgxIDcuODEgMCAwIDAtNS4yNzEgMHoiLz48L3N2Zz4=", 
-      description: "Modern UI framework",
-      popularity: 95
-    },
-    { 
-      name: "Python", 
-      category: "Backend", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZkNDNiIiBkPSJNMTQuMzEuMThsLjkuMi4wNzMuMDM2LjEzMy4wNGMuMzY1LjAyNyA0LjggMCA0LjgzMiAwYS44OC44OCAwIDAgMSAuNzM2LjQ1NGMuMTEyLjIxLjE1LjQ2Mi4xNS44MjZ2NS4xMDRjMCAxLjI1LS45OCAyLjI2LTIuMjYgMi4yNmgtNC43OGEyLjMyIDIuMzIgMCAwIDAtMi4zMiAyLjMydjEuMDU0YzAtLjE3My0uNDYtLjM3My0uNTYtLjM3M0g5LjIzNGEyLjM2IDIuMzYgMCAwIDEtMi4zNi0yLjM2VjMuNjAzYTIuNTUgMi41NSAwIDAgMSAyLjU2LTIuNTQzYy40OSAwIDQuNzk0LS4wMDYgNC44NzQgMHptLS4yNzQgMi4zMzNhLjI3NS4yNzUgMCAwIDAtLjI3NS4yNzVjMCAuMTUxLjEyNC4yNzUuMjc1LjI3NWEuMjc1LjI3NSAwIDAgMCAuMjc1LS4yNzVhLjI3NS4yNzUgMCAwIDAtLjI3NS0uMjc1eiIvPjxwYXRoIGZpbGw9IjMxNzZiNiIgZD0iTTkuNjkgMjMuODE2bC0uOS0uMmEuNzQ2Ljc0NiAwIDAgMS0uMDczLS4wMzZsLS4xMzMtLjA0Yy0uMzY1LS4wMjctNC44IDAtNC44MzIgMGEuODguODggMCAwIDEtLjczNi0uNDU0Yy0uMTEyLS4yMS0uMTUtLjQ2Mi0uMTUtLjgyNnYtNS4xMDRjMC0xLjI1Ljk4LTIuMjYgMi4yNi0yLjI2aDQuNzhhMi4zMiAyLjMyIDAgMCAwIDIuMzItMi4zMnYtMS4wNTRjMCAuMTczLjQ2LjM3My41Ni4zNzNoMi4zNGEyLjM2IDIuMzYgMCAwIDEgMi4zNiAyLjM2djUuOTMzYTIuNTUgMi41NSAwIDAgMS0yLjU2IDIuNTQzYy0uNDkgMC00Ljc5NC4wMDYtNC44NzQgMHptLjI3NC0yLjMzM2EuMjc1LjI3NSAwIDAgMCAuMjc1LS4yNzVhLjI3NS4yNzUgMCAwIDAtLjI3NS0uMjc1YS4yNzUuMjc1IDAgMCAwLS4yNzUuMjc1Yy4wMDEuMTUuMTI1LjI3NS4yNzUuMjc1eiIvPjwvc3ZnPg==", 
-      description: "AI/ML development",
-      popularity: 92
-    },
-    { 
-      name: "AWS Bedrock", 
-      category: "AI Platform", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmY5OTAwIiBkPSJNNi41IDE1LjVBMS41IDEuNSAwIDAgMSA1IDE0VjEwQTEuNSAxLjUgMCAwIDEgNi41IDguNUgxMGMuMjc2IDAgLjUuMjI0LjUuNVM5Ljc3NiAxMCA5IDEwSDguNXYzLjVIOS41YS41LjUgMCAwIDEgMCAxSDYuNXoiLz48cGF0aCBmaWxsPSIjMjMyZjNlIiBkPSJNMTMuNSA5LjVBMS41IDEuNSAwIDAgMSAxNSA4VjUuNWExIDEgMCAwIDEgMS0xaC41YTEuNSAxLjUgMCAwIDEgMS41IDEuNXY0YTEuNSAxLjUgMCAwIDEtMS41IDEuNUgxM2ExIDEgMCAwIDEtMS0xVjlhMSAxIDAgMCAxIDEtMWguNXoiLz48L3N2Zz4=", 
-      description: "Generative AI services",
-      popularity: 88
-    },
-    { 
-      name: "Docker", 
-      category: "DevOps", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDA5NmQ2IiBkPSJNMTMuOTgzIDExaDEuODI5VjlIMTNWNy4wMzVoMS45ODNWNUgxM1YzaDEuOTgzVjFIMTMuOTgzdjEweiIvPjxwYXRoIGZpbGw9IjAwYTZmMiIgZD0iTTEwIDVoMS45ODNWN0gxMHYySDguMDE3VjdIMTBWNXoiLz48L3N2Zz4=", 
-      description: "Containerization",
-      popularity: 90
-    },
-    { 
-      name: "GitHub", 
-      category: "Version Control", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMTgxNzE3IiBkPSJNMTIgMEMxOC43NiAwIDI0IDUuNSAyNCAxMi4yOGMwIDUuNDgtMy41OCAxMC4xNi04LjU1IDExLjgyYy0uNjMuMTItLjg2LS4yNy0uODYtLjU5djIuMDZjMCAuMzIuMjMuNzEuODYuNTlDMjAuNDIgMjIuNDQgMjQgMTcuNzYgMjQgMTIuMjhDMjQgNS41IDE4Ljc2IDAgMTIgMFMwIDUuNSAwIDEyLjI4YzAgNS40OCAzLjU4IDEwLjE2IDguNTUgMTEuODJjLjYzLjEyLjg2LS4yNy44Ni0uNTl2LTIuMDZjMC0uMzItLjIzLS43MS0uODYtLjU5QzMuNTggMjIuNDQgMCAxNy43NiAwIDEyLjI4QzAgNS41IDUuMjQgMCAxMiAweiIvPjwvc3ZnPg==", 
-      description: "Code management",
-      popularity: 96
-    },
-    { 
-      name: "VS Code", 
-      category: "Development", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDA3YWNjIiBkPSJNMjMuNTUgNS44MzRsLTUuMDUtNC4yNTNhMSAxIDAgMCAwLS44MDEtLjIxNUw5IDUuMDlsLS42MDktLjM2OGEuNzUuNzUgMCAwIDAtLjg2Mi4wNTFMMy4zOSA3LjcyOGEuNzUuNzUgMCAwIDAtLjM4OS42NTV2Ny4yMzRhLjc1Ljc1IDAgMCAwIC4zODkuNjU1bDQuMTM5IDIuOTk1YS43NS43NSAwIDAgMCAuODYyLjA1TDkgMTguOTFsOC42OTQgMy43MjRhMSAxIDAgMCAwIC44MDEtLjIxNWw1LjA1LTQuMjUzYTEgMSAwIDAgMCAuNDU1LS44Mzl2LTExYTEgMSAwIDAgMC0uNDQ5LS43OTN6Ii8+PC9zdmc+", 
-      description: "IDE environment",
-      popularity: 94
-    },
-    { 
-      name: "N8N", 
-      category: "Automation", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZWQwMDU3IiBkPSJNMTIgMGw0IDZoLTh6TTE4IDEyaDZ2MTJoLTZ6TTYgMTJoNnYxMkg2ek0wIDEyaDZ2MTJIMHoiLz48L3N2Zz4=", 
-      description: "Workflow automation",
-      popularity: 78
-    },
-    { 
-      name: "Notion", 
-      category: "Documentation", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNNC40NTkgNC4yMDhDNS42NjggMy4wODggNy4zMzYgMS44OTYgOC45MjcgMS4yMzZjMS41OTEtLjY2IDMuMjEzLS42MyA0LjgwOC4wODZjMS41OTUuNzE2IDMuMTA0IDEuOTQ1IDQuMjY3IDMuMDE2Yy4xMi4xMTEuMTE5LjI5NS0uMDA0LjQwNmwtNC4zNjMgMy45NTJhLjI5LjI5IDAgMCAxLS4zODkgMGwtNC42NzUtNC4yNTJhLjI5LjI5IDAgMCAxIDAtLjQyNCIvPjwvc3ZnPg==", 
-      description: "Project management",
-      popularity: 85
-    },
-    { 
-      name: "Cloudera", 
-      category: "Data Platform", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNzJiYWY1IiBkPSJNMjQgMTJhMTIgMTIgMCAxIDEtMjQgMGExMiAxMiAwIDAgMSAyNCAwem0tMTIgMWE3IDcgMCAxIDAgMC0xNGE3IDcgMCAwIDAgMCAxNHoiLz48L3N2Zz4=", 
-      description: "Big data processing",
-      popularity: 70
-    },
-    { 
-      name: "FHIR", 
-      category: "Healthcare Standard", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDA3YWNjIiBkPSJNOCAxMGg4djJIOHptMC00aDh2Mkg4em00IDEwYTcgNyAwIDEgMCAwLTE0YTcgNyAwIDAgMCAwIDE0eiIvPjwvc3ZnPg==", 
-      description: "Interoperability",
-      popularity: 88
-    },
-    { 
-      name: "DynamoDB", 
-      category: "Database", 
-      icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmY5OTAwIiBkPSJNMTIgNGE4IDggMCAxIDAgMCAxNmE4IDggMCAwIDAgMC0xNnptMCA2YTIgMiAwIDEgMSAwIDRhMiAyIDAgMCAxIDAtNHoiLz48L3N2Zz4=", 
-      description: "NoSQL storage",
-      popularity: 87
-    }
-  ];
+const technologies = [
+  { 
+    name: "React", 
+    category: "Frontend", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    description: "Modern UI framework",
+    popularity: 95
+  },
+  { 
+    name: "Python", 
+    category: "Backend", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    description: "AI/ML development",
+    popularity: 92
+  },
+  { 
+    name: "AWS Bedrock", 
+    category: "AI Platform", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    description: "Generative AI services",
+    popularity: 88
+  },
+  { 
+    name: "Docker", 
+    category: "DevOps", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    description: "Containerization",
+    popularity: 90
+  },
+  { 
+    name: "GitHub", 
+    category: "Version Control", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    description: "Code management",
+    popularity: 96
+  },
+  { 
+    name: "VS Code", 
+    category: "Development", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    description: "IDE environment",
+    popularity: 94
+  },
+  { 
+    name: "N8N", 
+    category: "Automation", 
+    icon: "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.svg",
+    description: "Workflow automation",
+    popularity: 78
+  },
+  { 
+    name: "Notion", 
+    category: "Documentation", 
+    icon: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+    description: "Project management",
+    popularity: 85
+  },
+  { 
+    name: "Cloudera", 
+    category: "Data Platform", 
+    icon: "https://www.cloudera.com/content/dam/www/marketing/images/logos/cloudera-logo.png",
+    description: "Big data processing",
+    popularity: 70
+  },
+  { 
+    name: "FHIR", 
+    category: "Healthcare Standard", 
+    icon: "https://www.hl7.org/fhir/assets/images/fhir-logo-www.png",
+    description: "Interoperability",
+    popularity: 88
+  },
+  { 
+    name: "DynamoDB", 
+    category: "Database", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
+    description: "NoSQL storage",
+    popularity: 87
+  }
+];
 
   const workflowSteps = [
     {
@@ -359,14 +359,14 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center space-x-3 shadow-2xl text-base sm:text-lg">
+                <a href='https://drive.google.com/drive/folders/1B-DdoUd7M7TywFWITvUivxM9YINNuyCe' className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center space-x-3 shadow-2xl text-base sm:text-lg">
                   <FiPlay />
                   <span>Watch Demo</span>
-                </button>
-                <button className="border-2 border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg">
+                </a>
+                <a href='https://github.com/adnaan-tariq/CareGenix' className="border-2 border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg">
                   <FiGithub />
                   <span>View GitHub</span>
-                </button>
+                </a>
               </div>
 
               {/* Social proof */}
@@ -942,14 +942,14 @@ const Home = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12">
-              <button className="bg-white text-black px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg shadow-2xl">
+              <a href='https://drive.google.com/drive/folders/1B-DdoUd7M7TywFWITvUivxM9YINNuyCe' className="bg-white text-black px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg shadow-2xl">
                 <FiPlay />
                 <span>Watch Live Demo</span>
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold hover:bg-white/10 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg">
+              </a>
+              <a href='https://github.com/adnaan-tariq/CareGenix' className="border-2 border-white/30 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold hover:bg-white/10 transition-all duration-300 flex items-center justify-center space-x-3 text-base sm:text-lg">
                 <FiGithub />
                 <span>Explore Source Code</span>
-              </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">

@@ -29,10 +29,10 @@ const Footer = () => {
                 <div>
                   <h4 className="font-bold text-black mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>Project</h4>
                   <div className="space-y-3">
-                    <a href="/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Documentation</a>
-                    <a href="/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>GitHub Repository</a>
-                    <a href="/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Live Demo</a>
-                    <a href="/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>API Reference</a>
+                    <a href="https://www.notion.so/CareGenix-Technical-Documentation-230c9528ac05805192bcc145cd232979" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Documentation</a>
+                    <a href="https://github.com/adnaan-tariq/CareGenix" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>GitHub Repository</a>
+                    <a href="https://drive.google.com/drive/folders/1B-DdoUd7M7TywFWITvUivxM9YINNuyCe" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Live Demo</a>
+          
                   </div>
                 </div>
                 
@@ -40,7 +40,7 @@ const Footer = () => {
                   <h4 className="font-bold text-black mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>Hackathon</h4>
                   <div className="space-y-3">
                     <a href="https://genai.works/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>GenAI.Works</a>
-                    <a href="/" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Submission Details</a>
+                   
                     <Link to="/team" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Team Information</Link>
                     <a href="https://genai.works/hackathon#judges" className="block text-gray-600 hover:text-black transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>Contact Judges</a>
                   </div>
