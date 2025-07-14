@@ -3,21 +3,154 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="CareGenix - Revolutionizing patient care management through autonomous AI agents. Advanced healthcare solutions powered by artificial intelligence for better patient outcomes." />
+  <meta name="keywords"
+    content="healthcare, AI, patient care, medical management, artificial intelligence, healthcare automation, CareGenix" />
+  <meta name="author" content="CareGenix Team" />
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="CareGenix | AI-Powered Patient Care Management" />
+  <meta property="og:description"
+    content="Revolutionizing healthcare with autonomous AI agents for superior patient care management and medical solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caregenix.com" />
+  <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+  <meta property="og:site_name" content="CareGenix" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CareGenix | AI-Powered Patient Care Management" />
+  <meta name="twitter:description"
+    content="Revolutionizing healthcare with autonomous AI agents for superior patient care management." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+
+  <!-- Favicon and App Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+
+  <!-- Web App Manifest -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <title>CareGenix | Patient Care Management</title>
+  <!-- Preconnect to external domains for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+  <!-- Performance Optimization -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+
+  <title>CareGenix | AI-Powered Patient Care Management</title>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <div style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      text-align: center;
+      padding: 2rem;
+    ">
+      <div style="
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+      ">
+        <h1 style="margin-bottom: 1rem; color: #000;">CareGenix</h1>
+        <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+          You need to enable JavaScript to experience CareGenix's AI-powered patient care management platform.
+        </p>
+        <p style="font-size: 0.875rem; color: #64748b;">
+          Please enable JavaScript in your browser settings and refresh this page.
+        </p>
+      </div>
+    </div>
+  </noscript>
+
+  <!-- Main App Container -->
   <div id="root"></div>
 
+  <!-- Loading Fallback -->
+  <div id="loading-fallback" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  ">
+    <div style="text-align: center;">
+      <div style="
+        width: 40px;
+        height: 40px;
+        border: 3px solid #e2e8f0;
+        border-top: 3px solid #000;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+      "></div>
+      <p style="
+        font-family: 'poppins';
+        color: #64748b;
+        font-size: 14px;
+      ">Loading CareGenix...</p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Hide loading fallback when React loads */
+    #root:not(:empty)~#loading-fallback {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+
+  <script>
+    // Remove loading fallback after a maximum time
+    setTimeout(function () {
+      const loadingFallback = document.getElementById('loading-fallback');
+      if (loadingFallback) {
+        loadingFallback.style.display = 'none';
+      }
+    }, 10000);
+  </script>
 </body>
 
 </html>

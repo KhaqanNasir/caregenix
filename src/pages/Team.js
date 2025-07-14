@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub, FiAward, FiBook, FiCalendar, FiClock, FiStar, FiUsers, FiCode, FiZap } from 'react-icons/fi';
+import { FiMail, FiPhone, FiLinkedin, FiGithub, FiAward, FiBook, FiCalendar, FiClock, FiStar, FiUsers, FiCode, FiZap } from 'react-icons/fi';
 
 const Team = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -30,72 +30,72 @@ const Team = () => {
     {
       id: 1,
       name: "Muhammad Khaqan Nasir",
-      role: "Lead AI Developer",
-      specialty: "Artificial Intelligence & Machine Learning",
-      experience: "8+ years",
+      role: "Website Development",
+      specialty: "ASP.NET Core and Generative AI",
+      experience: "1+ years",
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      email: "khaqan.nasir@caregenix.com",
-      phone: "+92 (300) 123-4567",
-      bio: "Muhammad Khaqan Nasir leads the development of AI-driven solutions at CareGenix, specializing in machine learning models for healthcare automation and diagnostics.",
+      image: "/assets/member01.jpg",
+      email: "khaqannasir01@gmail.com",
+      phone: "+92 (309) 1111977",
+      bio: "Full-stack developer specializing in ASP.NET Core and AI integration, with expertise in building scalable web applications for healthcare solutions.",
       qualifications: [
-        "MS in Artificial Intelligence, NUST",
-        "Certified AWS Machine Learning Specialist",
-        "Published 10+ papers on AI in Healthcare",
+        "BS in Computer Science, COMSATS",
+        "Certified ASP.NET Specialist",
+        "Built 10+ projects in AI and Web",
       ],
-      languages: ["English", "Urdu"],
+      languages: ["English", "Urdu", "Punjabi"],
       availability: "Mon-Fri: 9:00 AM - 6:00 PM",
-      linkedin: "https://linkedin.com/in/muhammad-khaqan-nasir",
-      github: "https://github.com/mkhaqan",
+      linkedin: "https://www.linkedin.com/in/khaqan-nasir/",
+      github: "https://github.com/KhaqanNasir",
     },
     {
       id: 2,
       name: "Muhammad Adnan Tariq",
-      role: "Frontend Architect",
-      specialty: "UI/UX Design & React Development",
-      experience: "7+ years",
-      rating: 4.8,
-      image: "https://images.unsplash.com/photo-1535713875002-d1d0cf335d9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      email: "adnan.tariq@caregenix.com",
-      phone: "+92 (300) 234-5678",
-      bio: "Muhammad Adnan Tariq designs intuitive and responsive user interfaces, ensuring seamless user experiences for CareGenix's healthcare platform.",
+      role: "AI/ML Engineer",
+      specialty: "Agentic AI and Generative AI",
+      experience: "1+ years",
+      rating: 4.9,
+      image: "/assets/member02.JPG",
+      email: "adnantariq966@gmail.com",
+      phone: "+92 (336) 6569117",
+      bio: "AI/ML engineer focused on agentic AI systems and generative AI, creating intelligent automation solutions for healthcare applications.",
       qualifications: [
-        "BS in Computer Science, LUMS",
-        "Certified React Developer",
-        "Expert in Tailwind CSS and UX Design",
+        "BS in Computer Science, COMSATS",
+        "Oracle Certified Gen AI Professional",
+        "Expert in Agentic AI and ML",
       ],
       languages: ["English", "Urdu", "Punjabi"],
-      availability: "Mon-Fri: 8:00 AM - 5:00 PM",
-      linkedin: "https://linkedin.com/in/muhammad-adnan-tariq",
-      github: "https://github.com/adnantariq",
+      availability: "Mon-Fri: 9:00 AM - 6:00 PM",
+      linkedin: "https://www.linkedin.com/in/adnaantariq/",
+      github: "https://github.com/adnaan-tariq",
     },
     {
       id: 3,
       name: "Muhammad Ibtisam Afzal",
-      role: "Backend & DevOps Engineer",
-      specialty: "Cloud Architecture & Data Engineering",
-      experience: "6+ years",
-      rating: 4.7,
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      email: "ibtisam.afzal@caregenix.com",
-      phone: "+92 (300) 345-6789",
-      bio: "Muhammad Ibtisam Afzal architects scalable cloud infrastructure and manages data pipelines to ensure robust and secure backend operations for CareGenix.",
+      role: "Development and UI/UX Expert",
+      specialty: "Generative AI Development and UI/UX",
+      experience: "1+ years",
+      rating: 4.9,
+      image: "/assets/member03.JPG",
+      email: "chaudhryibtisam2004@gmail.com",
+      phone: "+92 (322) 8742650",
+      bio: "Full-stack developer and UI/UX designer combining generative AI with intuitive design to create user-friendly healthcare interfaces.",
       qualifications: [
-        "MS in Data Science, FAST-NU",
-        "AWS Certified Solutions Architect",
-        "Expert in Docker and Kubernetes",
+        "BS in Computer Science, COMSATS",
+        "Certified Generative AI Specialist",
+        "Expert in Development and UI/UX",
       ],
-      languages: ["English", "Urdu"],
-      availability: "Mon-Fri: 10:00 AM - 7:00 PM",
-      linkedin: "https://linkedin.com/in/muhammad-ibtisam-afzal",
+      languages: ["English", "Urdu", "Punjabi"],
+      availability: "Mon-Fri: 9:00 AM - 6:00 PM",
+      linkedin: "https://www.linkedin.com/in/ibtisamafzal/",
       github: "https://github.com/ibtisamafzal",
     },
   ];
 
   const stats = [
     { value: "3", label: "Core Team Members", icon: <FiUsers /> },
-    { value: "20+", label: "Years Combined Experience", icon: <FiClock /> },
-    { value: "4.8", label: "Average Rating", icon: <FiStar /> },
+    { value: "3+", label: "Years Combined Experience", icon: <FiClock /> },
+    { value: "4.9", label: "Average Rating", icon: <FiStar /> },
     { value: "12+", label: "Technologies Mastered", icon: <FiCode /> },
   ];
 
@@ -113,7 +113,7 @@ const Team = () => {
       `}</style>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-16 lg:pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white pt-20 sm:pt-20 lg:pt-24 pb-12 sm:pb-16 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent)] pointer-events-none"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05),transparent)] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-animate id="hero-text">
@@ -171,7 +171,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-56 sm:h-64 md:h-72 object-cover object-top group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-3 right-3 bg-gradient-to-br from-black to-gray-800 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                     {member.specialty}
