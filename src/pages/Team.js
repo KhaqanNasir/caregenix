@@ -77,7 +77,7 @@ const Team = () => {
       experience: "1+ years",
       rating: 4.9,
       image: "/assets/member03.JPG",
-      email: "chaudhryibtisam2004@gmail.com",
+      email: "ibtisamafzal001@gmail.com",
       phone: "+92 (322) 8742650",
       bio: "Full-stack developer and UI/UX designer combining generative AI with intuitive design to create user-friendly healthcare interfaces.",
       qualifications: [
